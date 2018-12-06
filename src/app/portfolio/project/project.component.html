@@ -1,0 +1,25 @@
+<div class="project">
+    <div class="row">
+        <div class="col-lg-6">
+            <a href="{{project.link}}">
+                <img src="{{project.img}}" alt="" class="img-fluid border" />
+            </a>
+        </div>
+
+        <div class="col-lg-6">
+            <h2>{{project.name}}
+                <a href="{{project.link}}"><i class="fa fa-link" aria-hidden="true"></i></a>
+                <small [innerHTML]="project.description"></small>
+            </h2>
+
+            <h4>Technologies</h4>
+            <p [innerHTML]="project.technologies"></p>
+
+            <h4>My part on the project</h4>
+            <p [innerHTML]="project.work"></p>
+
+            <a href="https://fondationsablon.com/" class="btn btn-primary">View website</a>
+        </div>
+    </div>
+
+</div>
